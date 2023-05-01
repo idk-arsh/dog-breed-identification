@@ -23,7 +23,7 @@ def allowed_file(filename):
 
 @app.route('/')
 def index():
-    return render_template('r.html')
+    return render_template('home.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -44,7 +44,7 @@ def predict():
             pred=model.predict(image)
             pred_labels = get_preds_labels(pred,breed_list)
 
-            return render_template('wtf.html', prediction=pred_labels, image_file=os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            return render_template('result.html', prediction=pred_labels, image_file=os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
 
     return redirect(url_for('r.html'))
