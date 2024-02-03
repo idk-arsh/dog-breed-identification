@@ -8,7 +8,7 @@ Key features are :
 * Took nearly 2.5k images of 30 breeds.
 * For training,Inception v3 model as base model is used for feature extraction.
 * After training, training accuracy reached 99.89% with testing accuracy nearing 87%.
-* Deployed the model with python and having 'Flask'.
+* Deployed the model with python and using 'Flask' for the web-framework.
 
 ![Screenshot (39)](https://user-images.githubusercontent.com/124882021/235482845-b1318daa-954a-4f4b-950e-f9f7332d3b4f.png)
 ![Test-1](https://user-images.githubusercontent.com/124882021/235482892-2051dd21-8431-4b6f-85fa-15a6b28b1f4c.jpg)
